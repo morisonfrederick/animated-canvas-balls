@@ -16,12 +16,12 @@ export default function generateBalls(ctx: CanvasRenderingContext2D) {
   const balls = [];
   let num = 1;
 
-  while (num < 1000) {
+  while (num < 20) {
     let ball = new Ball(
       ctx,
       random(20, ctx.canvas.width - 20),
       random(20, ctx.canvas.height - 20),
-      5,
+      20,
       ctx.canvas.width,
       ctx.canvas.height,
       randomColor()
